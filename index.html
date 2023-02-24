@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sablon za kreiranje objekata studenata</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            class Student{
+               constructor (name,adress,phone,course){
+                this.name = name;
+                this.address = address;
+                this.phone = phone;
+                this.course = course;
+            }
+            get info (){
+                return "Name: " + this.name + "\n" +
+                "Adress: " + this.adress + "\n" +
+                "Phone: " + this.phone + "\n" + 
+                "Course: " + this.course + "\n"
+            }
+        }
+
+        var Student1 = new Student ("Ebonie Rangel", "7175 Yukon Street", "(507) 833-3567", "Geography");
+        var Student2 = new Student ("Keenan Ellwood", "2 Elm Lane", "(894) 831-6482", "History");
+        var Student3 = new Student ("Kailan Smart", "795 Harvard Street", "(925) 856-5167", "Biology");
+        var Student4 = new Student ("9 East lakeview Ave.", "(939) 812-6141", "Programming");
+        var Student5 = new Student ("Isabelle Prentice", "700 Rock Maple St.", "(899) 875-8627", "Math");
+
+        console.log(Student1.getInfo());
+        console.log(Student2.getInfo());
+        console.log(Student3.getInfo());
+        console.log(student4.getInfo());
+        console.log(Student5.getInfo());
+    </script>
+    </body>
+</html>
